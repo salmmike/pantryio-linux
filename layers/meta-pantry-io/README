@@ -1,0 +1,20 @@
+This README file contains information on the contents of the meta-pantry-io layer.
+
+Please see the corresponding sections below for details.
+
+Table of Contents
+=================
+
+  I. Adding the meta-pantry-io layer to your build
+ II. Misc
+
+
+I. Adding the meta-pantry-io layer to your build
+=================================================
+
+Run 'bitbake-layers add-layer meta-pantry-io'
+
+II. Misc
+========
+
+Pantry-io linux distribution

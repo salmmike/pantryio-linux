@@ -1,0 +1,4 @@
+**/tmp/
+**/downloads/
+**/sstate-cache/
+image_get.sh
