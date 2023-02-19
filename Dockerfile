@@ -23,6 +23,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN echo ${USERNAME}:${USERNAME} | chpasswd
 
 RUN locale-gen en_US.UTF-8
+RUN mkdir /build
 
 ENV LANG en_US.UTF-8
 
