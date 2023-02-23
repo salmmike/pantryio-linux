@@ -1,23 +1,18 @@
 pipeline {
-    agent any
-    options {
-        skipStagesAfterUnstable()
+    agent {
+        dockerfile {
+            filename 'Dockerfile'
+        }
     }
+
     stages {
         stage('Build') {
             steps {
-                sh 'cmake .'
-                sh 'make'
-            }
-        }
-        stage('Test'){
-            steps {
-                sh 'echo test'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                sh 'echo publish'
+                sh "echo $PWD"
+                sh "echo $USER"
+                sh "which ssh"
+                sh "hostname"
+                sh "./repo_init.sh"
             }
         }
     }
