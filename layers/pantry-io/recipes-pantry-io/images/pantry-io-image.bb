@@ -1,9 +1,7 @@
 SUMMARY = "Pantry-io linux image with basic Wayland support."
 LICENSE = "Proprietary"
 
-include recipes-pantry-io/images/st-image.inc
 inherit core-image features_check
-
 
 # let's make sure we have a good image...
 REQUIRED_DISTRO_FEATURES = "wayland"
