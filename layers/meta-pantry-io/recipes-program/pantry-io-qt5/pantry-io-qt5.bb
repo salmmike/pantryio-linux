@@ -3,7 +3,7 @@ DESCRIPTION = "TODO"
 SECTION = "example"
 LICENSE = "MIT"
 
-DEPENDS += " qtbase wayland "
+DEPENDS += " qtbase "
 
 SRC_URI = " file://main.cpp \
             file://mainwindow.cpp \
@@ -21,6 +21,7 @@ do_install() {
     install -d /opt/qttest/bin/qttest
     install -m 0775 qttest /opt/qttest/bin/
 }
+
 
 FILES:${PN} += "/opt/qttest/bin/qttest"
 
