@@ -6,6 +6,12 @@ LICENSE = "MIT"
 
 inherit core-image
 
-IMAGE_INSTALL += " qtbase qtbase-tools qtbase-plugins pantry-io-qt5"
+PACKAGECONFIG_qtbase += " eglfs gles2 "
+
+IMAGE_INSTALL +=  " qtbase \
+                    qtbase-tools \
+                    qtbase-plugins \
+                    pantry-io-qt5 \
+                    qtscript "
 
 QB_MEM = "-m 512"
