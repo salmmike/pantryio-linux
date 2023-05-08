@@ -7,6 +7,9 @@ LICENSE = "MIT"
 inherit core-image
 
 PACKAGECONFIG_qtbase += " eglfs gles2 "
+PACKAGECONFIG:append_pn-qtbase = " eglfs "
+
+PACKAGECONFIG[eglfs] = "-eglfs"
 
 IMAGE_INSTALL +=  " qtbase \
                     qtbase-tools \

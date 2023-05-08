@@ -11,3 +11,6 @@
 [submodule "layers/meta-qt5"]
 	path = layers/meta-qt5
 	url = git@github.com:meta-qt5/meta-qt5.git
+[submodule "layers/meta-st-openstlinux"]
+	path = layers/meta-st-openstlinux
+	url = git@github.com:STMicroelectronics/meta-st-openstlinux.git

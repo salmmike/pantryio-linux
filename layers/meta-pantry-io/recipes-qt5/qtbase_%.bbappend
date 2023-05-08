@@ -1,4 +1,5 @@
-PACKAGECONFIG += "gles2"
+PACKAGECONFIG += " gles2 "
+PACKAGECONFIG[eglfs] = "eglfs,noeglfs,drm"
 
 do_configure_prepend() {
     cat > ${S}/mkspecs/oe-device-extra.pri <<EOF
